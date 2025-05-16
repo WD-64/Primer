@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding School Sing-up Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Join us</h1>
+      <p>Fill out the form 😊</p>
+    </header>
+
+    <main>
+      <section>
+        <form method="get" autocomplete="on">
+          <!-- PERSONAL INFO -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+              <label for="firstname">First Name:</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Jane"
+                autocomplete="given-name"
+              />
+            </div>
+            <div>
+              <label for="givename">Last Name:</label>
+              <input
+                type="text"
+                name="givename"
+                id="givename"
+                placeholder="Doe"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email: </label
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane.doe@example.com"
+              />
+            </div>
+          </fieldset>
+
+          <!-- ADDRESS -->
+          <fieldset>
+            <legend>Adress Information</legend>
+
+            <div>
+              <label for="adress">Street Adress:</label
+              ><input
+                type="text"
+                id="adress"
+                name="address"
+                placeholder="123 Main Street"
+              />
+            </div>
+
+            <div>
+              <label for="zipcode">Zip Code</label
+              ><input
+                type="text"
+                id="zipcode"
+                name="zipcode"
+                placeholder="12345"
+                pattern="[0-9]{5}"
+                autocomplete="postal-code"
+              />
+            </div>
+            <div>
+              <label for="city">City: </label
+              ><input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Anytown"
+                autocomplete="address-level2"
+              />
+            </div>
+
+            <div>
+              <label for="comments">Additional comments: </label>
+              <textarea
+                name="comments"
+                id="comments"
+                rows="4"
+                placeholder="Tell us about your goals and what you hope to achieve."
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <!-- ! DROPDOWN! -->
+          <fieldset>
+            <legend>Course Information</legend>
+
+            <div>
+              <label for="bootcamp">Select Bootcamp</label>
+              <select name="bootcamp" id="bootcamp">
+                <option value="" disabled selected>
+                  --Please choose an option--
+                </option>
+                <option value="webdev">Web & Dev Bootcamp</option>
+                <option value="datascience">Data Science</option>
+                <option value="uxdesign">UX/UI Design</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- PREFERENCES! -->
+          <fieldset>
+            <legend>Study Preference</legend>
+            <div>
+              <input
+                type="radio"
+                name="study-time"
+                id="morning"
+                value="morning"
+                required
+              />
+              <label for="morning">I code before coffee!</label>
+            </div>
+            <!-- When radio buttonas are connected, only one needs a required! -->
+
+            <!-- index.html?givenname=Brixel?email=renke.brixel@wbscodingschool.com?study-time=morning -->
+
+            <!-- name: 1) linking radio buttons 
+             2) key for server -->
+            <div>
+              <input
+                type="radio"
+                name="study-time"
+                id="afternoon"
+                value="afternoon"
+              />
+              <label for="afternoon">Peak productivity after lunch</label>
+            </div>
+            <div>
+              <input type="radio" name="study-time" id="night" value="night" />
+              <label for="night">My best code happens after midnight</label>
+            </div>
+          </fieldset>
+          <div>
+            <label>
+              <input type="checkbox" name="terms" required />I agree to the
+              <a href=""> terms and conditions </a>
+            </label>
+          </div>
+          <div>
+            <button type="submit">Submit Application</button>
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

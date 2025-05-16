@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  outline: 2px dashed purple;
+}
+
+body {
+  background-color: lightgray;
+}
+
+p {
+  color: purple;
+}
+
+.myHeading {
+  color: brown;
+  text-decoration: underline;
+}
+
+h1 {
+}
+
+.subHeader h2 {
+}
+
+.important-text {
+  color: aqua;
+  font-weight: bold;
+  margin-block: 60px;
+}
+
+.myParagraph {
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  line-height: 1.25;
+}
+
+.container {
+  background-color: orange;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  padding: 3rem;
+  border: 5px solid red;
+  margin: 2rem;
+}
+
+.box {
+  background-color: blue;
+  width: 5rem;
+  height: 5rem;
+  color: whitesmoke;
+  margin: auto;
+  line-height: 5rem;
+  text-align: center;
+}

@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: red; */
+  background-color: #345544;
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body > * {
+  max-width: 1400px;
+  /* margin: 0 auto; */
+  margin-inline: auto;
+}
+
+/* @media (max-width: 800px) {
+  body {
+    background-color: rebeccapurple;
+  }
+}
+
+@media (min-width: 400px) {
+  body {
+    background-color: blue;
+    margin: 10rem;
+  }
+} */
+
+/* @media (width < 1200px) {
+  body {
+    background-color: orangered;
+  }
+} */
+
+@media (500px < width < 1000px) {
+  body {
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+a,
+button,
+textarea,
+input {
+  color: inherit;
+  font: inherit;
+  /* background-color: inherit; */
+}
+
+header {
+  /* display: flex; */
+}
+
+header ul {
+  display: flex;
+  /* margin: 3rem; */
+  list-style: none;
+}
+
+header li {
+  margin-right: 1rem;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-width: 60ch;
+  text-shadow: 6px 4px 10px black;
+}
+
+p {
+  max-width: 60ch;
+  line-height: 1.5;
+  /* text-align: justify; */
+  /* margin: 0 2rem; */
+}
+
+main p {
+  margin-inline: 2rem;
+}
+
+figure {
+  margin-inline: 1rem;
+}
+
+.contact {
+  margin: 3rem;
+}
+.contact__form {
+}
+
+.contact__label {
+  width: 8rem;
+  height: 3rem;
+  display: inline-block;
+}
+.contact__input {
+  display: inline-block;
+  width: 15rem;
+  color: #343026;
+  padding: 0.25rem 0.75rem;
+
+  @media (width < 470px) {
+    width: 10rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.contact__label--textarea {
+  vertical-align: 45px;
+}
+
+.btn {
+  color: black;
+  padding: 0.25rem 0.75rem;
+}
+
+.contact__btn {
+  /* margin: 0 15rem; */
+  margin-left: 14.5rem;
+  margin-top: 0.5rem;
+  /* width: fit-content; */
+}

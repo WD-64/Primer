@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact The Hobbit Hole Coffee Shop</title>
   </head>
+
   <body>
     <header>
+      <p>Our Logo! ☕</p>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -14,8 +17,6 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
-      <p>Our Logo! ☕</p>
     </header>
 
     <main>
@@ -32,26 +33,42 @@
           alt="A small house embedded in a grassy hill with a round wooden door"
           width="100%"
         />
-        <figcaption>Our cozy location under the hill</figcaption>
+        <!-- <figcaption>Our cozy location under the hill</figcaption> -->
       </figure>
 
-      <div>
-        <form>
-          <div>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <div>
-            <button type="submit">Send Message</button>
-          </div>
+      <div class="contact">
+        <!-- BEM: Block__Element--Modifier -->
+        <form class="contact__form">
+          <label class="contact__label" for="name">Your Name:</label>
+          <input
+            class="contact__input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+          <br />
+          <label class="contact__label" for="email">Your Email:</label>
+          <input
+            class="contact__input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <br />
+          <label class="contact__label contact__label--textarea" for="message"
+            >Your Message:</label
+          >
+          <textarea
+            class="contact__input"
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+          <br />
+          <button class="btn contact__btn" type="submit">Send Message</button>
         </form>
       </div>
     </main>

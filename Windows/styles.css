@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*16px -> 62.5% = 10px = 1rem*/
+}
+
+body {
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  align-content: center;
+}
+
+.window {
+  margin: auto;
+  background-color: #c0c0c0;
+  width: 47.5rem;
+  /* width: fit-content; */
+  border: 3px solid;
+  border-color: white #414141 #414141 white;
+  border-radius: 5px;
+  /* margin: 1rem; */
+  /* box-shadow: inset -1px -1px #808080, inset 1px 1px #fff; */
+}
+
+.window__header {
+  color: white;
+  background-image: linear-gradient(to right, #0c2467, #a9cbf1);
+  /* background-image: linear-gradient(to right in hsl, blue, yellow); */
+  /* height: 20rem; */
+  padding: 0.5rem 2rem;
+  border-radius: 2.5px 2.5px 0px 0px;
+  /* border-bottom: 2px solid red; */
+  position: relative;
+}
+
+/* .border {
+  height: 1px;
+  background-image: linear-gradient(to right, #27386c, #94b3d4)
+} */
+
+.window__header::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  /* background-color: red; */
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #27386c, #94b3d4);
+}
+
+.window__heading {
+  font-size: 1.25rem;
+  /* margin: 1rem 2rem; */
+}
+
+.window__content {
+  padding: 2rem;
+  /* display: flex; */
+  /* align-items: flex-start; */
+  /* gap: 2rem; */
+}
+
+.window__message {
+  display: inline;
+  margin-left: 2rem;
+  vertical-align: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.window__img {
+  width: 4rem;
+  height: 4rem;
+  /* aspect-ratio: 1; */
+  /* box-shadow: 3px 3px 0px black;
+  border-radius: 1000px; */
+  filter: drop-shadow(3px 3px 0px #808080);
+  image-rendering: pixelated;
+}
+
+.windows__btn {
+  margin: 2rem 0 0 36rem;
+  padding: 0.25rem 0.75rem;
+  background-color: transparent;
+  /* background-color: inherit; */
+  border: 3px outset;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.windows__btn:active {
+  /* background-color: green; */
+  border-style: inset;
+}
